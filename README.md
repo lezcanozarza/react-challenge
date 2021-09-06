@@ -5,7 +5,7 @@
 
 ## Description
 
-So create this application so that the police are much more efficient when solving cases. With this application they can automate their processes.
+Stolen bikes are a typical problem in Berlin. so I created this application for the police to be much more efficient when solving cases. With this application they can automate their processes.
 
 ## Things you can do
 
