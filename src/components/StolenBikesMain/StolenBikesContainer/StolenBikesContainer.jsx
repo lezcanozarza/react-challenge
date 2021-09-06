@@ -12,7 +12,7 @@ import Loader from "react-loader-spinner";
 
 const StolenBikesContainer = () => {
 
-  const { bikes, getBikes } = useContext(Context)
+  const { bikes, getBikes, loader, setLoader } = useContext(Context)
 
   const location = window.location.pathname
 
@@ -39,7 +39,7 @@ const StolenBikesContainer = () => {
   },[location])
 
   return (
-    !bikes ? <StyledStolenBikesContainer> <Loader
+    loader ? <StyledStolenBikesContainer> <Loader
         type="Oval"
         color="white"
         height={100}
@@ -60,7 +60,7 @@ const StolenBikesContainer = () => {
         </div>
         : stolenBikes.map((bike) => {
       return(
-        <Link to={`/case/${bike.id}`}>
+        <Link to={`/case/${bike.id}`} onClick={() => setLoader(true)}>
         <StolenBikeCard key={bike.id} {...bike}/>
         </Link>
       )

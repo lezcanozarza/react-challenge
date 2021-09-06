@@ -44,13 +44,14 @@ export const StyledBikeCard = styled.div`
       width: 48rem;
       word-wrap: break-word;
       text-decoration: none;
+      color: ${props => props.theme.primaryLight}
     }
     .bike_textDate{
       font-size: 18px;
+      color: ${props => props.theme.primaryLight}
     }
     .bike_date{
       display: flex;
-
     }
   }
 `
