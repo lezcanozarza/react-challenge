@@ -76,7 +76,6 @@ export const DataProvider = ({ children }) => {
     }
   };
 
-  ///RETURN
   return (
     <Context.Provider
       value={{ getBikes, bikes, getBikesFiltered, loader, setLoader }}
