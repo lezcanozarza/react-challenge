@@ -1,9 +1,8 @@
-import React from "react";
-import { StyledHeader } from "../../styles/styled_header.js";
-
 import { Link } from "react-router-dom";
-//assets
+
+//assets and style
 import logo from "../../assets/header-logo.png";
+import { StyledHeader } from "../../styles/styled_header.js";
 
 const Header = () => {
   return (

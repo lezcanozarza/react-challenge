@@ -1,15 +1,15 @@
 import { useState, useContext } from "react";
 import { Context } from "../../../services/Context.js";
 
+//style
+import { StyledButton } from "../../../styles/styled_button";
 import { Form } from "../../../styles/styled_search_parameters.js";
 
 import { useHistory } from "react-router-dom";
-
-import { StyledButton } from "../../../styles/styled_button";
-
 import moment from "moment";
 
 const SearchParameters = (props) => {
+  //executing the moment library
   moment().format();
 
   const [data, setData] = useState({

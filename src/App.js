@@ -8,6 +8,8 @@ import LandingPage from "./components/LandingPage/LandingPage.jsx";
 
 //Routing
 import { BrowserRouter, Route } from "react-router-dom";
+
+//context
 import { DataProvider } from "./services/Context.js";
 
 function App() {

@@ -1,7 +1,5 @@
-import React from "react";
-
+//assets and style
 import imageNotFound from "../../../assets/imageNotFound.jpg";
-
 import { StyledBikeCard } from "../../../styles/styled_bike_card.js";
 
 const StolenBikeCard = ({
@@ -11,6 +9,8 @@ const StolenBikeCard = ({
   stolen_location,
   large_img,
 }) => {
+
+  //here we transform the date because it's in unix format.
   const date = new Date(date_stolen * 1000).toLocaleDateString("en-US");
 
   return (
