@@ -29,7 +29,7 @@ const StolenBikeDetail = ({ bike, hour, fecha }) => {
         <p className="bike_text">
           {bike.stolen_record.theft_description
             ? bike.stolen_record.theft_description
-            : "No description allowed"}
+            : "No description available"}
         </p>
       </div>
     </StyledStolenDetail>
