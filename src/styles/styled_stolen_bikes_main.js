@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledStolenBikesMain = styled.div`
-  .style_main{
+  .style_main {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
   }
-`
+`;

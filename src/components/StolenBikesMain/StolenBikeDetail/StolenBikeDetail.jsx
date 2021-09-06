@@ -1,29 +1,39 @@
+import { StyledStolenDetail } from "../../../styles/styled_stolen_bike_detail";
 
-import {StyledStolenDetail} from '../../../styles/styled_stolen_bike_detail'
-
-import MapBox from './MapBox/MapBox.jsx'
+import MapBox from "./MapBox/MapBox.jsx";
 import Loader from "react-loader-spinner";
 
-const StolenBikeDetail = ({bike, hour, fecha}) => {
-
-  return !bike ? <Loader
+const StolenBikeDetail = ({ bike, hour, fecha }) => {
+  return !bike ? (
+    <Loader
       type="Oval"
       color="white"
       height={100}
       width={100}
       timeout={50000}
-      className='style_loader'
-    /> : (
+      className="style_loader"
+    />
+  ) : (
     <StyledStolenDetail>
-      <div className='bike_detail'>
-      <p className='bike_title'>{bike.title}</p>
-      <p className='bike_text'>Stolen {fecha.toDateString()} {hour}{hour > 12 ? 'PM' : 'AM'} at {bike.stolen_location}</p>
-      <MapBox longitude={bike.stolen_record.longitude} latitude={bike.stolen_record.latitude}/>
-      <p className='bike_title'>Description of incident</p>
-      <p className='bike_text'>{bike.stolen_record.theft_description ? bike.stolen_record.theft_description : 'No description allowed'}</p>
+      <div className="bike_detail">
+        <p className="bike_title">{bike.title}</p>
+        <p className="bike_text">
+          Stolen {fecha.toDateString()} {hour}
+          {hour > 12 ? "PM" : "AM"} at {bike.stolen_location}
+        </p>
+        <MapBox
+          longitude={bike.stolen_record.longitude}
+          latitude={bike.stolen_record.latitude}
+        />
+        <p className="bike_title">Description of incident</p>
+        <p className="bike_text">
+          {bike.stolen_record.theft_description
+            ? bike.stolen_record.theft_description
+            : "No description allowed"}
+        </p>
       </div>
     </StyledStolenDetail>
-  )
-}
+  );
+};
 
-export default StolenBikeDetail
+export default StolenBikeDetail;

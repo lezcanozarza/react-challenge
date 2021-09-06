@@ -5,8 +5,9 @@ export const Theme = ({ children }) => {
     <ThemeProvider
       theme={{
         primary: "#003071",
-        primaryLight: "#1a7bbc"
-      }}>
+        primaryLight: "#1a7bbc",
+      }}
+    >
       {children}
     </ThemeProvider>
   );

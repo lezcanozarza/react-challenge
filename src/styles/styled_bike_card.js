@@ -1,57 +1,57 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledBikeCard = styled.div`
-  display:flex;
+  display: flex;
   margin: 3rem 0rem 3rem 0rem;
   background: white;
   max-width: 70rem;
   width: 100%;
   border-radius: 15px;
   transition: 0.5s;
-  &:hover{
-    transform: scale(1.05)
+  &:hover {
+    transform: scale(1.05);
   }
-  .bike_img{
+  .bike_img {
     display: flex;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     margin: 2rem;
     width: 15rem;
     height: 15rem;
-    overflow:hidden;
+    overflow: hidden;
     border: 2px solid grey;
-    img{
+    img {
       max-height: 20rem;
     }
   }
-  .bike_data{
+  .bike_data {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50rem;
     height: 15rem;
     margin: 2rem 0rem 2rem 0rem;
-    color: ${props => props.theme.primary};
-    .bike_title{
+    color: ${(props) => props.theme.primary};
+    .bike_title {
       font-size: 24px;
       font-weight: bolder;
       margin: 0;
     }
-    .bike_description{
+    .bike_description {
       font-size: 18px;
-      overflow:hidden;
+      overflow: hidden;
       height: 7rem;
       width: 48rem;
       word-wrap: break-word;
       text-decoration: none;
-      color: ${props => props.theme.primaryLight}
+      color: ${(props) => props.theme.primaryLight};
     }
-    .bike_textDate{
+    .bike_textDate {
       font-size: 18px;
-      color: ${props => props.theme.primaryLight}
+      color: ${(props) => props.theme.primaryLight};
     }
-    .bike_date{
+    .bike_date {
       display: flex;
     }
   }
-`
+`;
