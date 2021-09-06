@@ -1,11 +1,13 @@
 # Stolen Bikes Index - Front End Challenge
 
+![JOIN Stolen Bike Cases](https://github.com/chiper-inc/React-Web-Coding-Challenge/blob/master/illustration.png)
+
 
 ## Description
 
 So create this application so that the police are much more efficient when solving cases. With this application they can automate their processes.
 
-## Things yo can do
+## Things you can do
 
 As a police officer:
 
