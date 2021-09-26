@@ -42,7 +42,7 @@ const StolenBikesContainer = () => {
 
   useEffect(() => {
     //with this conditional I'm avoiding a call to the API if there are any search parameter.
-    if (location !== "home/search") {
+    if (location !== "/home/search") {
       getBikes();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
