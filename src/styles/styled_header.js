@@ -13,10 +13,12 @@ export const StyledHeader = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 15rem;
+    height: 6rem;
+    background-color: ${props => props.theme.primary};
+    margin-bottom: 3rem;
   }
   img {
-    width: 6rem;
+    width: 3rem;
     margin: 2rem;
   }
   .header_title_container {
@@ -24,11 +26,11 @@ export const StyledHeader = styled.div`
     flex-direction: column;
   }
   .header_title {
-    font-size: 64px;
+    font-size: 32px;
     ${Title_style}
   }
   .header_subtitle {
-    font-size: 32px;
+    font-size: 16px;
     ${Title_style}
   }
 `;

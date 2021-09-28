@@ -44,22 +44,28 @@ const SearchParameters = (props) => {
 
   return (
     <Form onSubmit={submitData}>
+      <div className='search_inputs'>
       <div className="item_search">
         <label>Search Case Description</label>
         <input type="text" name="title" onChange={titleChange} />
       </div>
+      <div className="date_inputs">
       <div className="item_search">
         <label>from</label>
-        <input type="date" name="dateFrom" onChange={dateChange} />
+        <input className='date_input' type="date" name="dateFrom" onChange={dateChange} />
       </div>
-      <div className="item_search">
+      <div className="item_search_to">
         <label>to</label>
-        <input type="date" name="dateTo" onChange={dateChange} />
+        <input className='date_input' type="date" name="dateTo" onChange={dateChange} />
       </div>
+      </div>
+      </div>
+      <div className='search_buttons'>
       <StyledButton type="submit" className="submit_button">
         Find cases
       </StyledButton>
       <p className="bikes_results">total: {bikes?.length}</p>
+      </div>
     </Form>
   );
 };

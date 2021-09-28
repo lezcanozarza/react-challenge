@@ -20,4 +20,8 @@ export const StyledLandingPage = styled.div`
     font-size: 40px;
     margin: 1rem;
   }
+  .home_button{
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+  }
 `;

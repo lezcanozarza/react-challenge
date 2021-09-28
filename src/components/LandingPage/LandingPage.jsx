@@ -10,7 +10,7 @@ const LandingPage = (props) => {
         <h1>Stolen Bike Index</h1>
         <p>software specialized in cases of stolen bicycles.</p>
         <Link to="/home">
-          <StyledButton>Go home</StyledButton>
+          <StyledButton className='home_button'>Home</StyledButton>
         </Link>
       </div>
     </StyledLandingPage>

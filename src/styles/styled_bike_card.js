@@ -6,8 +6,9 @@ export const StyledBikeCard = styled.div`
   background: white;
   max-width: 70rem;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 2px;
   transition: 0.5s;
+  box-shadow: 0px 0px 2px black;
   &:hover {
     transform: scale(1.05);
   }
